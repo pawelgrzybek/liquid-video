@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liquid Video Example</title>
+  <style>
+    .wrap {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/aZVhCuDxtU8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <br />
+    <br />
+    <iframe src="https://player.vimeo.com/video/114584766?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+  <script src="../js/liquid-video.js"></script>
+  <script>
+    var LiquidVideo = new LiquidVideo(document.querySelectorAll('.wrap iframe'));
+  </script>
+</body>
+</html>

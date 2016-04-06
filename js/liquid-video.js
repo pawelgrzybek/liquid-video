@@ -1,6 +1,5 @@
-// IIFE to create seperated scope
-(function() {
-  function makeThisShitResponsive(elm) {
+(function(global) {
+  function LiquidVideo(elm) {
     // loop through all videos
     for (var i = 0; i < elm.length; i++) {
       var videoWidth = elm[i].offsetWidth;
@@ -23,7 +22,5 @@
     }
   }
 
-  // invoke function on custom query
-  var elms = document.querySelectorAll('.post iframe');
-  makeThisShitResponsive(elms);
-})();
+  global['LiquidVideo'] = LiquidVideo;
+})(this);
