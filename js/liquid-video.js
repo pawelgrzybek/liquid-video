@@ -22,5 +22,6 @@
     }
   }
 
+  // export prototype to global scope
   global['LiquidVideo'] = LiquidVideo;
 })(this);
