@@ -1,16 +1,12 @@
 # Liquid video
 
-Super easy script to make your `iframe` or `embed` responsive / liquid. To run it edit this hunk of code by passing your query.
+Super easy script to make your `iframe` or `embed` responsive / liquid. To use it grab a copy of minified file and instantiate a new LiqudVideo object passing your query as an argument. It doesn't require any other dependencies like jQuery and it super lightweight - only 357B minified and around 1kb unminified.
 
-```js
-var elms = document.querySelectorAll('.post iframe');
-makeThisShitResponsive(elms);
+```html
+<script src="js/liquid-video.min.js"></script>
+<script>
+  var LiquidVideo = new LiquidVideo(document.querySelectorAll('.wrap iframe'));
+</script>
 ```
 
 [Example on Codepen](http://codepen.io/pawelgrzybek/pen/vGxqaq)
-
-
-## FitVid vs Liquid video
-
-- FitVid, 100kb (3kb script + 97kb jQuery dependency)
-- Liquid video, 1kb (no dependencies needed)
