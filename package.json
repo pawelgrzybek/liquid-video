@@ -2,10 +2,7 @@
   "name": "liquid-video",
   "version": "1.0.0",
   "description": "Make your iframe & embed videos responsive with ease.",
-  "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
+  "main": "js/liquid-video.js",
   "scripts": {
     "uglify": "./node_modules/.bin/uglifyjs ./js/liquid-video.js -o ./js/liquid-video.min.js -m -c"
   },
@@ -13,11 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/pawelgrzybek/liquid-video.git"
   },
-  "author": "Pawel Grzybek @pawelgrzybek",
+  "author": "Pawel Grzybek <grzybecki@gmail.com> (https://pawelgrzybek.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pawelgrzybek/liquid-video/issues"
   },
+  "keywords": [
+    "video",
+    "iframe",
+    "embed",
+    "mobile",
+    "responsive",
+    "liquid"
+  ],
   "homepage": "https://github.com/pawelgrzybek/liquid-video#readme",
   "devDependencies": {
     "uglify-js": "^2.6.2"
