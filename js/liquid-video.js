@@ -22,6 +22,11 @@
     }
   }
 
-  // export prototype to global scope
-  global['LiquidVideo'] = LiquidVideo;
+  // export prototype to npm & global scope
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = LiquidVideo;
+  }
+  else {
+    global['LiquidVideo'] = LiquidVideo;
+  }
 })(this);
