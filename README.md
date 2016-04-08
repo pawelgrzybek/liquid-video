@@ -22,8 +22,8 @@ npm install --save liquid-video
 ```
 
 ```js
-var lv = require=('liquid-video');
-var poo = new lv(document.querySelectorAll('.post iframe'));
+var LiquidVideo = require('liquid-video');
+var lv = new LiquidVideo(document.querySelectorAll('.post iframe'));
 ```
 ## Demo
 
