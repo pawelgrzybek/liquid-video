@@ -1,6 +1,6 @@
 {
   "name": "liquid-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make your iframe & embed videos responsive with ease.",
   "main": "js/liquid-video.js",
   "scripts": {
